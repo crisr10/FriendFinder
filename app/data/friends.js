@@ -16,13 +16,13 @@ var peopleArray = [
 },
 {
 	name: 'Ron Swanson',
-	photo: 'http://vignette3.wikia.nocookie.net/parksandrecreation/images/5/5c/Ron.jpg/revision/latest?cb=20110809180635',
+	photo: 'http://www.pawneeindiana.com/images/promos/ron-proud.jpg',
 	scores: [3,3,3,3,3,3,3,3,3,3]
 },
 {
 	name: 'April Ludgate',
 	photo: 'https://img.buzzfeed.com/buzzfeed-static/static/2015-01/7/11/campaign_images/webdr10/if-april-ludgate-had-instagram-2-24018-1420646599-0_dblbig.jpg',
 	scores: [1,1,1,5,1,5,1,5,1,1]
-}]
+}];
 
 module.exports = peopleArray;
