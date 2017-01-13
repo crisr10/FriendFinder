@@ -45,7 +45,7 @@ module.exports = function (app) {
       for (var s=0; s<scoresNumberArray.length; s++){
         sum += Math.abs(peopleData[j].scores[s]-scoresNumberArray[s]);
       }
-      // Pushing sums to scoresCompareArray.
+      // Pushing sums to scoresCompare array.
       scoresCompare.push(sum);
       // Setting sum back to 0 for the next friend.
       sum = 0;
@@ -53,15 +53,20 @@ module.exports = function (app) {
   }
 
   function findMatch(){
+    // setting initial lowest difference to the first number of the scoresCompare array
     var lowestDiff = scoresCompare[0];
     var matchIndex;
 
+    // for loop to find the lowest number, this number thenbecomes lowestDiff
     for (var i=0; i<scoresCompare.length; i++){
       if (scoresCompare[i]<lowestDiff) {
         lowestDiff= scoresCompare[i];
       }
+      //find index of the lowest number inside scoresCompare
       matchIndex = (scoresCompare.indexOf(lowestDiff));
     }
+
+    // Use index to find match
     var match = peopleData[matchIndex];
     peopleData.push(req.body);
     res.json(match);
