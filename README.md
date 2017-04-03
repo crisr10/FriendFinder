@@ -1,12 +1,15 @@
 # Friend Finder
 Node, express app that finds friend matches after taking 10 question survey.
 
-# Get Started
+## Get Started
 * Clone the repo on your local machine
 * Run `npm install` inside the corresponding directory to install all dependencies
 
-# Dependencies
+## Dependencies
 Express, path and body-parser
+
+## Licence 
+This project is licenced under the MIT Licence - see the LICENSE.md file for details
 
 
 
